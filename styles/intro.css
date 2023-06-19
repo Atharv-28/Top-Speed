@@ -1,0 +1,108 @@
+.intro {
+    flex: 1;
+    padding-top: 15vh;
+    display: flex;
+    height: calc(100vh - 15vh);
+    width: 100vw;
+    overflow: hidden;
+}
+
+.intImg {
+    flex: 1;
+    display: flex;
+    width: 50%;
+    position: relative;
+    margin-left: 5vw;
+}
+
+.intImg img {
+    width: 70vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.72), 0 6px 20px 0 rgba(0, 0, 0, 0.79) ;
+}
+
+.into-content {
+    flex: 1.22;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height:calc(100vh - 15vh);
+    width: 40vw;
+    padding-left: 3vw;
+    margin-left: -15vw;
+    backdrop-filter: blur(80px);
+    transform: skew(-10deg);
+    transform: skew(-10deg);
+    transform: skew(-10deg);
+}
+
+.intro-contentinfo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    width: 35vw;
+}
+
+.intro-contentinfo h1 {
+    margin-top: -35px;
+    font-weight: bold;
+    color: #c52b30;
+}
+
+.intro-contentinfo p {
+    margin-top: 10px;
+    color: #373485;
+}
+
+.intro-contentinfo button {
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #33a0d1;
+    color: #e6e6e7;
+    font-family: NFS;
+}
+
+.intro-contentinfo button:hover {
+    box-shadow: 0px 0px 20px 5px white;
+}
+
+
+
+
+
+
+@media screen and(min-width:700px) 
+{
+    .into-content {
+        transform: skew(-20deg);
+        transform: skew(-20deg);
+        transform: skew(-20deg);
+        backdrop-filter: blur(80px);
+    }
+}
+
+@media screen and (min-width:1000px) 
+{
+    .intro-contentinfo h1 {
+        font-size: 3.5rem;
+    }   
+    .intro-contentinfo p {
+        font-size: 2rem;
+    }
+    .intro-contentinfo button {
+        border-radius: 30px;
+        height: 7vh;
+        width: 10vw;
+        margin-top: 10px;
+        background-color: #33a0d1;
+        color: #e6e6e7;
+        font-family: NFS;
+        font-size: 1.2rem;
+    }
+    .into-content {
+        transform: skew(-20deg);
+        transform: skew(-20deg);
+        transform: skew(-20deg);
+    }
+}
