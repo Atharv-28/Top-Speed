@@ -1,8 +1,118 @@
-.footer
-{
+.footer {
     margin-top: 5vh;
     height: 35vh;
-    background-color: #131a22;
+    background-color: rgb(23, 35, 55);
     width: 100%;
     bottom: 0;
+}
+
+.about-Name {
+    margin-top: 3vh;
+    align-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #c52b30;
+}
+
+.about-ci {
+    margin-top: 3vh;
+    align-self: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #33a0d1;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4vw;
+    justify-content: center;
+    align-items: center;
+}
+.icon
+{
+    margin-top: 2vh;
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+}
+.icon:hover
+{
+    box-shadow: 0px 0px 15px 1px white;
+}
+.linkedin
+{
+    background-image: url("../Assets/footer-icons/linkedin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.linkedin:hover
+{
+    background-image: url("../Assets/footer-icons/linkedin-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.email
+{
+    background-image: url("../Assets/footer-icons/email.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.twitter
+{
+    background-image: url("../Assets/footer-icons/twitter.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.twitter:hover
+{
+    background-image: url("../Assets/footer-icons/twitter-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.instagram
+{
+    background-image: url("../Assets/footer-icons/instagram.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.instagram:hover
+{
+    background-image: url("../Assets/footer-icons/instagram-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.gm 
+{
+    background-image: url("../Assets/footer-icons/gmail-logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gm:hover
+{
+    background-image: url("../Assets/footer-icons/gmail-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.om 
+{
+    background-image: url("../Assets/footer-icons/outlook.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.om:hover
+{
+    background-image: url("../Assets/footer-icons/outlook-color.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width : 648px) {
+    .icon{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+    }
 }

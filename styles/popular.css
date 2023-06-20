@@ -1,78 +1,93 @@
-.popular
-{
+.popular {
     background-color: rgb(30, 30, 30);
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 30px;
     width: 90vw;
-    margin-left: 5vw;
-    padding-bottom: 4vh;
+    margin: 5vw;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
 }
-.poph3
-{
-    align-self:center;
+
+.show {
+    display: block;
+}
+
+.poph3 {
+    align-self: center;
+    text-align: center;
     color: #c52b30;
     font-size: 3.1rem;
 }
-.car-types
-{
+
+.car-types {
     margin-top: 3vh;
     align-self: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2vw;
+    flex-wrap: wrap;
 }
-.cartype
-{
+
+.cartype {
     font-size: 1.3rem;
+    padding: 0 15px 0 15px;
     border-radius: 30px;
     background-color: #33a0d1;
     color: #e6e6e7;
+    text-align: center;
     font-family: nfs;
-    width:15vw;
+    width: max-content;
 }
-.cartype:hover{
+
+.cartype:hover {
     box-shadow: 0px 0px 20px 5px white;
 }
-.cardofcars
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2vw;
+
+.cartype.active {
+    background-color: #373485;
 }
-.car-card
-{
-    margin-top: 5vh;
+
+@media screen and (min-width : 650px) {
+    .cardofcars {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vw;
+    }
+
+    .car-card {
+        margin-top: 5vh;
+    }
+
+    .imageCard {
+        height: 50vh;
+        width: 23vw;
+        box-shadow: 0px 0px 20px 5px white;
+        border-radius: 30px;
+    }
 }
-.imageCard
+
+@media screen and (max-width : 648px) 
 {
-    height: 50vh;
-    width: 23vw;
-    box-shadow: 0px 0px 20px 5px white;
-    border-radius: 30px;
-}
-#sports
-{
-    position: absolute;
-    visibility: hidden;
-}
-#jdm
-{
-    position: absolute;
-    visibility: hidden;
-}
-#hypbut:checked + #hyper
-{
-    visibility: visible;
-}
-#spobut:checked + #sports
-{
-    visibility: visible;
-}
-#jdmbut:checked + #jdm
-{
-    visibility: visible;
+    .cardofcars
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vw;
+    }
+    .car-card{
+        margin-top: 5vh;
+    }
+    .imageCard{
+        height: 30vh;
+        width: 40vw;
+        box-shadow: 0px 0px 20px 5px white;
+        border-radius: 30px;
+    }
 }

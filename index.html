@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faast Car Test</title>
+    <title>Top-Speed</title>
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/nav.css">
     <link rel="icon" href="./Assets/nav icon.jpeg">
@@ -41,18 +41,17 @@
     </header>
     <section id="intro" class="intro">
         <div class="intImg">
-            <img src="./Assets/hometopleft1-transbyedit.png" alt="">
+            <img src="./Assets/hometopleft1-transbyedit.png" alt="" class="intImg-Img">
         </div>
         <div class="into-content">
             <div class="intro-contentinfo">
-                <h1>Race of Fastest Production Car</h1>
-                <p>Some car manifactureres brands only exists because of this</p>
-                <button>Discover</button>
+                <h1 class="intro-contentinfo-h1">Race of Fastest Production Car</h1>
+                <p class="intro-contentinfo-p">Some car manifactureres brands only exists because of this</p>
+                <a class="intro-contentinfo-but" href="discover.html">Discover</a>
             </div>
         </div>
     </section>
     <section class="whySection">
-        <img class="whySection-img" src="./Assets/homeMidLeft.jpeg" alt="">
         <div class="whySection-content">
             <h2>Why Build Fastest Production Car</h2>
             <p>There are several reasons why car manufacturers aim to build the fastest production car. One reason is that it allows them to showcase their engineering and technological capabilities1. It also creates a rivalry among manufacturers to extract every ounce of performance from their engines2. The fight to create the world's fastest car has been ongoing for many years.</p>
@@ -60,30 +59,40 @@
     </section>
     <section class="popular">
         <h3 class="poph3">Most Popular Brands</h3>
-        <div class="car-types">
-            <button id="hypbut" class="cartype">Hyper Cars</button>
-            <button id="spobut" class="cartype">Sports Cars</button>
-            <button id="jdmbut" class="cartype">JDM</button>
+        <div class="car-types" id="myBtnContainer">
+            <button class="cartype" data-filter="all">All</button>
+            <button class="cartype" data-filter="hyper">Hyper Cars</button>
+            <button class="cartype" data-filter="sports">Sports Cars</button>
+            <button class="cartype" data-filter="jdm">JDM</button>
+            <button class="cartype" data-filter="super">Super Cars</button>
         </div>
         <div class="cardofcars">
-            <a href="" id="hyper"  class="car-card"><img src="./Assets/Bugatti-logo.jpg" alt="" class="imageCard"></a>
-            <a href="" id="hyper" class="car-card"><img src="./Assets/koenigsegg logo.png" alt="" class="imageCard"></a>
-            <a href="" id="hyper" class="car-card"><img src="./Assets/Mclaren logo.jpg" alt="" class="imageCard"></a>
-            <a href="" id="sports" class="car-card"><img src="./Assets/lambo logo.jpeg" alt="" class="imageCard"></a>
-            <a href="" id="sports" class="car-card"><img src="./Assets/ferrari logo.jpeg" alt="" class="imageCard"></a>
-            <a href="" id="sports" class="car-card"><img src="./Assets/porsche logo.jpg" alt="" class="imageCard"></a>
-            <a href="" id="jdm" class="car-card"><img src="./Assets/toyota logo.jpeg" alt="" class="imageCard"></a>
-            <a href="" id="jdm" class="car-card"><img src="./Assets/Nissan-Logo-1_1.jpeg" alt="" class="imageCard"></a>
-            <a href="" id="jdm" class="car-card"><img src="./Assets/Honda-Emblem.jpg" alt="" class="imageCard"></a>
+            <a href=""  class="car-card hyper"><img src="./Assets/Bugatti-logo.jpg" alt="" class="imageCard"></a>
+            <a href="" class="car-card hyper"><img src="./Assets/koenigsegg logo.png" alt="" class="imageCard"></a>
+            <a href="" class="car-card hyper"><img src="./Assets/Mclaren logo.jpg" alt="" class="imageCard"></a>
+            <a href="" class="car-card super"><img src="./Assets/lambo logo.jpeg" alt="" class="imageCard"></a>
+            <a href="" class="car-card super"><img src="./Assets/ferrari logo.jpeg" alt="" class="imageCard"></a>
+            <a href=""class="car-card super"><img src="./Assets/porsche logo.jpg" alt="" class="imageCard"></a>
+            <a href="" class="car-card sports"><img src="./Assets/bmw-logo.jpg" alt="" class="imageCard"></a>
+            <a href="" class="car-card sports"><img src="./Assets/mercedes-logo.jpeg" alt="" class="imageCard"></a>
+            <a href="" class="car-card sports"><img src="./Assets/audi-logo.jpeg" alt="" class="imageCard"></a>
+            <a href="" class="car-card jdm"><img src="./Assets/toyota logo.jpeg" alt="" class="imageCard"></a>
+            <a href="" class="car-card jdm"><img src="./Assets/Nissan-Logo-1_1.jpeg" alt="" class="imageCard"></a>
+            <a href="" class="car-card jdm"><img src="./Assets/Honda-Emblem.jpg" alt="" class="imageCard"></a>
         </div>
+        <script src="./scripts/popular.js"></script>
     </section>
     <section class="footer" id="foot">
-        <div class="my-info">
-            
-        </div>
+        <h5 class="about-Name">Created by Atharv Mayur Tambekar</h5>
+        <p class="about-ci">Contact info :</p>
         <div class="links">
-
+            <a target="_blank" href="https://www.linkedin.com/in/atharv-tambekar-a4a07a213/" class="icon linkedin"></a>
+            <a href="mailto:atharvtambekar28@gmail.com" class="gm icon"></a>
+            <a href="mailto:atharvmt@outlook.com" class="om icon"></a>
+            <a target="_blank" href="https://twitter.com/AtharvMayur" class="icon twitter"></a>
+            <a target="_blank" href="https://www.instagram.com/atharv._.2005/" class="icon instagram"></a>
         </div>
     </section>
+    
 </body>
 </html>
